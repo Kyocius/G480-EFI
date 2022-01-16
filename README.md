@@ -1,5 +1,6 @@
 # Lenovo G480 Clover EFI
 基本上可以完美使用!
+[Bilibili视频链接](https://www.bilibili.com/video/BV1gq4y1A7LG?spm_id_from=333.999.0.0)
 ## 配置
 - CPU `i5-3230M`*（2.6GHZ）*
 
@@ -41,44 +42,43 @@
 - 睡眠没有他的完美(没搞明白)
 
 ### @mjs520 的原文
+- 睡眠唤醒声音正常
 
-1. 睡眠唤醒声音正常
+- 触控板手势基本正常
 
-2. 触控板手势基本正常
+- Hacktool打缓冲针补丁，显卡HD4000驱动正常，显示PCI信息，注入EDID信息
 
-3. Hacktool打缓冲针补丁，显卡HD4000驱动正常，显示PCI信息，注入EDID信息
+- 修改显存2048mb
 
-4. 修改显存2048mb
+- USB端口定制2.0、3.0正常
 
-5. USB端口定制2.0、3.0正常
+- 有线网卡正常
 
-6. 有线网卡正常
+- AR9485无线网卡正常
 
-7. AR9485无线网卡正常
+- ALC269声卡仿冒正常
 
-8. ALC269声卡仿冒正常
+- EC0重命名EC，ACPI添加仿冒SSDT-EC
 
-9. EC0重命名EC，ACPI添加仿冒SSDT-EC
+-  添加了FixEDID修补，提高色彩温和度，增加了桌面分辨率选择
 
-10. 添加了FixEDID修补，提高色彩温和度，增加了桌面分辨率选择
+- 修改DSDT，加载LPC硬件ID加载原生电源管理
 
-11. 修改DSDT，加载LPC硬件ID加载原生电源管理
+- 变频正常 (CPUFried+sSDTPRGen)
 
-12. 变频正常 (CPUFried+sSDTPRGen)
+- 增加了XMPDetection(只适用DDR3)，即可将内存条自动超频到1600或更高值。
 
-13. 增加了XMPDetection(只适用DDR3)，即可将内存条自动超频到1600或更高值。
+- 添加亮度DSDT~HD4000亮度补丁+(GFX0重命名IGUP)+ACPIBacklight.kext亮度滑块正常。
 
-14. 添加亮度DSDT~HD4000亮度补丁+(GFX0重命名IGUP)+ACPIBacklight.kext亮度滑块正常。
+- 亮度、声音细腻调节1/4格,小太阳快捷键-功能键+F5、F6，声音快捷键-功能键+F11、F12
 
-15. 亮度、声音细腻调节1/4格,小太阳快捷键-功能键+F5、F6，声音快捷键-功能键+F11、F12
+- 添加热补丁(SSDT-ALS0+SMCLightsensors.kext)实现亮度保存，及自动调节选项。
 
-16. 添加热补丁(SSDT-ALS0+SMCLightsensors.kext)实现亮度保存，及自动调节选项。
+- 添加ACPIbatterymanage.kext实现电池百分比正常
 
-17. 添加ACPIbatterymanage.kext实现电池百分比正常
+- 添加三码AppleStore正常下载，FaceTime，Imesge正常
 
-18. 添加三码AppleStore正常下载，FaceTime，Imesge正常
-
-19. 添加DSDT～SMBus补丁加载SMBus成功
+- 添加DSDT～SMBus补丁加载SMBus成功
 
 ## 最后
 本项目基于`GPLv3`协议开源，禁止倒卖，请遵守本开源协议!
